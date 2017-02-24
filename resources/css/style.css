@@ -1,18 +1,34 @@
+html {
+  font-size: 18px;
+}
+
 body {
   font-family: helvetica;
-  font-size: 18px;
+
   color: white;
 }
 
 /*logo banner*/
-.logo {
+.logo-banner {
   background-color: black;
+
+}
+
+.logo {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  margin-left: 150px;
+}
+.logo-text {
+  padding: 0.66rem 0;
+  font-size: 1rem;
 
 }
 
 /*main banner*/
 .banner {
-
+  display: flex;
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg');
   height: 25rem;
   background-repeat: no-repeat;
@@ -22,20 +38,47 @@ body {
 }
 
 .banner-text {
-
+  display: block;
+  height: 11rem;
+  width: 25rem;
   background-color: black;
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 9rem;
+}
 
+.arrival {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  line-height: 1.4em;
+  margin-top: 0;
+}
+
+.sport {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  padding-top: 0.25rem;
+  line-height: 1.4em;
+  padding-bottom: 2rem;
 }
 
 /*navigation*/
 
 .navigation {
+  display: flex;
   background-color: firebrick;
+  padding: 0.75rem 150px;
+  width: 100%;
+  justify-content: space-between;
 }
+
 
 /*product grid*/
 .product {
-  border: 1px solid blue;
+  border: 1px solid red;
 
 }
 
@@ -52,7 +95,7 @@ body {
 /*location and hours*/
 .location-hours {
   background-color: black;
-  border: 1px solid blue;
+  border: 1px solid red;
 }
 
 .location, .hours {
@@ -63,5 +106,5 @@ body {
 
 .footer {
   background-color: black;
-  border: 1px solid blue;
+  border: 1px solid red;
 }
