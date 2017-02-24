@@ -35,21 +35,33 @@ body {
 
 /*product grid*/
 .product {
-  border: 2px solid blue;
+  border: 1px solid blue;
 
 }
 
 .item {
-
+  border: 1px solid blue;
 
 }
 
 .label {
   background-color: black;
+  border: 1px solid blue;
 }
 
-/*location*/
+/*location and hours*/
+.location-hours {
+  background-color: black;
+  border: 1px solid blue;
+}
 
-/*hours*/
+.location, .hours {
+  border: 1px solid blue;
+}
 
 /*footer*/
+
+.footer {
+  background-color: black;
+  border: 1px solid blue;
+}
