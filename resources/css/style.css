@@ -85,6 +85,10 @@ body {
   justify-content: space-between;
 }
 
+.menu {
+  display: none;
+}
+
 /*product grid*/
 .merchandise {
   display: flex;
@@ -94,7 +98,7 @@ body {
   margin-top: 3rem;
 }
 
-.product {
+.product, .watch, .glasses {
   width: 30%;
   display: block;
 }
@@ -153,4 +157,81 @@ img {
   background-color: black;
   color: white;
   display: block;
+}
+
+/*tablet specs*/
+
+@media only screen and (max-width: 1024px) {
+  .tabs {
+    display: none;
+  }
+  .menu {
+    display: inline-flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+  }
+   .glasses {
+    display: none;
+  }
+  .product, .watch {
+    display: block;
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+  .banner-text {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 10rem;
+  }
+  .arrival {
+    font-size: 0.77rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    line-height: 1.4em;
+    margin-top: 0;
+  }
+
+  .sport {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    line-height: 1.4em;
+    padding-bottom: 1rem;
+  }
+  .watch {
+    display: none;
+
+  }
+  .product {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .location-hours {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+
+  }
+
+  .location, .hours {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
 }
